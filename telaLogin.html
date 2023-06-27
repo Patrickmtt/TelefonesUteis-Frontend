@@ -4,30 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Telefones Úteis</title>
+    <title>Login</title>
 
-    <link type="text/css" rel="stylesheet" media="screen" href="style.css"/>
+    <link type="text/css" rel="stylesheet" media="screen" href="css/style.css"/>
     <link href='https://fonts.googleapis.com/css?family=Quicksand' rel="stylesheet">
+    <script src="js/Scripts.js" defer></script>
 
 </head>
 <body>
-    <div class="coluna_esquerda">
-        <div class="area_logo">
+    <div class="colunaEsquerda">
+        <div class="areaLogo">
             <img src="img/logoNova.png" alt="Logo Nova Tendência">
-            <hr class="linha_verde">
+            <hr class="linhaVerde">
             <p>Telefones Úteis<p>
         </div>
     </div>
-    <div class= "coluna_direita">
-        <div class="area_dados">
+    <div class= "colunaDireita">
+        <div class="areaDados">
             <h1>Entrar</h1>
                 <div style="margin-top: 100px; margin-bottom: 60px;">
-                    <input type="email" class="texto" placeholder="usuário@ntendencia.com.br">
-                    <input type="password" class="texto" placeholder="Senha">
+                    <input type="email" class="inserirTexto" placeholder="usuário@ntendencia.com.br">
+                    <input type="password" class="inserirTexto" placeholder="Senha">
                 </div>
-            <div class="div">
-                <a href="" class="botao_login">Entrar</a>
-                <a href="" class="redefinir_senha">Esqueceu sua senha ?</a>
+            <div class="areaBotoes">
+                <button href="" class="botaoLogin">Entrar</button>
+                <button id="esqueceuSenha">Esqueceu sua senha ?</button>
+                <dialog id="teste">
+                    <img src="img/redefinirSenha.png" alt="Esqueceu sua senha ?" class="imagemModal">
+                    <h1>Esqueceu sua senha ?</h1>
+                    <p>Informe o email associado a sua conta</p>
+                    <input type="email" class="campoModal" placeholder="Email">
+                    <button class="botaoModal">Recuperar Senha</button>
+                </dialog>
             </div>
         </div>
     </div>
