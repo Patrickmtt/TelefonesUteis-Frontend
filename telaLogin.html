@@ -12,32 +12,30 @@
 
 </head>
 <body>
-    <div class="colunaEsquerda">
-        <div class="areaLogo">
-            <img src="img/logoNova.png" alt="Logo Nova Tendência">
-            <hr class="linhaVerde">
-            <p>Telefones Úteis<p>
-        </div>
+    <div class="coluna-esquerda">
+            <img src="img/TechMinTeste.png" alt="Logo TechMin" class="logo">
+            <p>Telefones Úteis</p>
     </div>
-    <div class= "colunaDireita">
-        <div class="areaDados">
+    <div class= "coluna-direita">
+        <div class="area-dados">
             <h1>Entrar</h1>
-                <div style="margin-top: 100px; margin-bottom: 60px;">
-                    <input type="email" class="inserirTexto" placeholder="usuário@ntendencia.com.br">
-                    <input type="password" class="inserirTexto" placeholder="Senha">
+            <form class="formulario">
+                <input type="email" class="inserir-dados" placeholder="usuário@email.com.br">
+                <input type="password" class="inserir-dados" placeholder="Senha">
+                <a href="mainPage.html"><button class="botao-login">Entrar</button></a>
+            </form>
+            <button id="esqueceu-senha">Esqueceu sua senha ?</button>
+            <dialog>
+                <img src="img/redefinirSenha.png" alt="Esqueceu sua senha ?" id="imagem-modal">
+                <div class="area-texto-modal">
+                    <h2>Esqueceu sua senha ?</h2>
+                    <p>Informe o email <br>associado a sua conta</p>        
+                    <input type="email" class="campo-modal" placeholder="usuario@email.com">
+                    <button class="botao-modal">Recuperar Senha</button>
                 </div>
-            <div class="areaBotoes">
-                <button href="" class="botaoLogin">Entrar</button>
-                <button id="esqueceuSenha">Esqueceu sua senha ?</button>
-                <dialog id="teste">
-                    <img src="img/redefinirSenha.png" alt="Esqueceu sua senha ?" class="imagemModal">
-                    <h1>Esqueceu sua senha ?</h1>
-                    <p>Informe o email associado a sua conta</p>
-                    <input type="email" class="campoModal" placeholder="Email">
-                    <button class="botaoModal">Recuperar Senha</button>
-                </dialog>
-            </div>
+            </dialog>
         </div>
+        
     </div>
 </body>
 </html>
