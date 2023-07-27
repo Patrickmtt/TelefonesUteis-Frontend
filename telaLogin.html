@@ -8,12 +8,10 @@
 
     <link type="text/css" rel="stylesheet" media="screen" href="css/style.css"/>
     <link href='https://fonts.googleapis.com/css?family=Quicksand' rel="stylesheet">
-    <script src="js/Scripts.js" defer></script>
-
 </head>
 <body>
     <div class="coluna-esquerda">
-            <img src="img/TechMinTeste.png" alt="Logo TechMin" class="logo">
+            <img src="assets/TechMin.png" alt="Logo TechMin" class="logo">
             <p>Telefones Úteis</p>
     </div>
     <div class= "coluna-direita">
@@ -25,17 +23,18 @@
                 <a href="mainPage.html"><button class="botao-login">Entrar</button></a>
             </form>
             <button id="esqueceu-senha">Esqueceu sua senha ?</button>
-            <dialog>
-                <img src="img/redefinirSenha.png" alt="Esqueceu sua senha ?" id="imagem-modal">
-                <div class="area-texto-modal">
+            <dialog class="modal-email" id="recuperar-senha">
+                <div class="modal-email__conteudo">
+                    <img src="assets/fechar.png" alt="teste" class="modal-email__fechar">
+                    <img src="assets/redefinirSenha.png" alt="Esqueceu sua senha ?" class="modal-email__imagem-principal">
                     <h2>Esqueceu sua senha ?</h2>
                     <p>Informe o email <br>associado a sua conta</p>        
-                    <input type="email" class="campo-modal" placeholder="usuario@email.com">
-                    <button class="botao-modal">Recuperar Senha</button>
+                    <input type="email" class="modal-email__input" placeholder="usuario@email.com">
+                    <button class="modal-email__botao">Recuperar Senha</button>
                 </div>
             </dialog>
         </div>
-        
     </div>
+    <script src="js/Scripts.js" defer></script>
 </body>
 </html>

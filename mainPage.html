@@ -8,12 +8,52 @@
 
     <link type="text/css" rel="stylesheet" media="screen" href="css/style.css"/>
     <link href='https://fonts.googleapis.com/css?family=Quicksand' rel="stylesheet">
-    <script src="js/Scripts.js" defer></script>
 </head>
 <body>
-    <footer class="cabecalho">
-        <img src="img/TechMinHeader.png" alt="logo">
-    </footer>
+    <div class="area-principal">
+        <header class="cabecalho">
+            <img src="assets/TechMinHeader.png" alt="logo">
+        </header>
+        <div class="area-ptb">
+            <button class="botao-principal" id="botao-contato">ADD CONTATO</button>
+            <button class="botao-principal" id="botao-convite">ENVIAR CONVITE</button>
+        </div>
+        <dialog class="modal-email" id="criar-convite">
+            <div class="modal-email__conteudo">
+                <img src="assets/fechar.png" alt="Fecha modal" class="modal-email__fechar">
+                <img src="assets/convidarColaborador.png" alt="Adicionar Contato" class="modal-email__imagem-principal">
+                <h2>Convide um colaborador</h2>
+                <p>informe o email de um colaborador para que ele receba um convite de cadastro</p>
+                <input type="email" class="modal-email__input" placeholder="usuario@email.com">
+                <button class="modal-email__botao">Enviar Convite</button>
+        </div>
+        </dialog>
+        <dialog class="modal-contato" id="adicionar-contato">
+            <div class="modal-contato__conteudo">
+                <img src="assets/adicionarFoto.png" alt="Adicionar Contato" class="modal-contato_adicionar-foto">
+                <form class="modal-contato__formulario">
+                    <input type="text" placeholder="teste" class="modal-contato__input">
+                    <input placeholder="teste" id="unidade" class="modal-contato__input">
+                    <input placeholder="teste" id="ramal" class="modal-contato__input">
+                    <input type="email" placeholder="teste" id="email" class="modal-contato__input">
+                    <input type="number" id="numero" placeholder="teste" class="modal-contato__input">
 
+                    <div class="modal-contato__area-botoes">
+                        <button class="modal-contato__botoes">CANCELAR</button>
+                        <button class="modal-contato__botoes">Continuar ADD</button>
+                        <button class="modal-contato__botoes">SALVAR E FINALIZAR</button>
+                    </div>
+                </form>
+        </div>
+        </dialog>
+        <div class="area-pesquisa">
+            <img src="assets/teste.jpg" alt="" id="background-pesquisa">
+            <div id="campo-pesquisa-telefone">
+                <input type="text" class="inseri-pesquisa">
+                <input type="text" class="inseri-pesquisa">
+            </div>
+        </div>   
+    </div>
+    <script src="js/teste.js" defer></script>
 </body>
 </html>

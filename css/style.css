@@ -1,3 +1,9 @@
+:root{
+    --cor-principal: #039aa5;
+    --cor-secundaria : #064968;
+    --cor-terciaria : #f6f6f6;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -10,7 +16,7 @@
     width: 55%;
     height: 100vh;
     float: left;
-    color: #064968;
+    color: var(--cor-secundaria);
     font-size: 35pt;
     font-weight: bold;
     
@@ -19,14 +25,14 @@
 .coluna-direita{
     width: 35%;
     height: 100vh;
-    background-color: #039aa5;
-    color: white;
+    background-color: var(--cor-principal);
+    color: var(--cor-terciaria);
     float: left;
    
 }
 
 .logo{
-    color: #064968;
+    color: var(--cor-secundaria);
     padding-bottom: 30px;
     border-bottom: solid 5px;
     width: 500px;
@@ -39,9 +45,9 @@
     margin: 20px 0;
     border: none;
     background: transparent;
-    border-bottom: solid 1px white;
+    border-bottom: solid 1px var(--cor-terciaria);
     outline: none;
-    color: white;
+    color: var(--cor-terciaria);
     padding-left: 20px;
 }
 
@@ -55,8 +61,8 @@
 .botao-login{
     border: 200px;
     margin-top: 80px;
-    background-color: rgb(2, 17, 36);
-    color: white;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-terciaria);
     width: 450px;
     border-radius: 16px; 
     font-size: 24px; 
@@ -79,7 +85,7 @@
 
 #esqueceu-senha{
     text-decoration: none;
-    color: white;
+    color: var(--cor-terciaria);
     border: none;
     background-color: inherit;
     cursor: pointer;
@@ -90,12 +96,12 @@
     font-size: 14pt;
     opacity: 0.5;
     font-family:'Quicksan';
-    color: white;
+    color: var(--cor-terciaria);
 }
 
-.modal-senha{
-    background-color: white;
-    margin: auto;
+.modal-email{
+    background-color: var(--cor-terciaria);
+    margin:auto;
     width: 350px;
     height: 523px;
     border-radius: 4px;
@@ -103,10 +109,10 @@
     
 }
 
-.botao-modal{
+.modal-email__botao{
     margin-top: 40px;
-    background-color:  rgb(2, 17, 36);
-    color: white;
+    background-color:  var(--cor-secundaria);
+    color: var(--cor-terciaria);
     width: 80%;
     align-self: center; 
     border-radius: 10px; 
@@ -122,8 +128,7 @@
     opacity: 0.8;
 }
 
-.campo-modal{
-
+.modal-email__input{
     width: 80%;
     height: 40px;
     padding: 5px 0px;
@@ -136,21 +141,163 @@
     align-self: center;
 }
 
-.cabecalho{
-    width: 100%;
-    height: 80px;
-    background-color:#039aa5;
-    float: left;
-    padding-left: 60px;
-}
-.area-texto-modal{
+.modal-email__conteudo{
     display: flex;
+    align-items: center;
     text-align: center;
     flex-direction: column;
     margin: 15px;
     gap: 20px;
+
+}
+.modal-email__fechar{
+    max-width: 20px;
+    max-height: 20px;
+    align-self: flex-end;
 }
 
-#imagem-modal{
-    margin: 50px 0 20px 0;
+.modal-email__imagem-principal{
+    width: 125px;
+    height: 140px;
+}
+.cabecalho{
+    background-color: var(--cor-principal);
+    padding-left: 60px;
+}
+
+
+.botao-principal{
+    border: 150px;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-terciaria);
+    width: 200px;
+    border-radius: 16px; 
+    font-size: 24px; 
+    padding: 20px 0px; 
+    cursor: pointer;
+    opacity: 1;
+    font-size: 12pt;
+}
+
+.area-ptb{
+    margin: 40px 80px;
+    display: flex;
+    align-self: flex-end;
+    gap: 40px;
+}
+
+.area-principal{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.area-pesquisa{
+    display: flex;
+    align-self: center;
+    margin-top: 70px;
+    width: 70%;
+    height: 40%;
+    gap: 20px;
+}
+
+
+#background-pesquisa{
+    width: inherit;
+    height: inherit;
+    z-index: -1;
+    position: absolute;
+}
+
+#campo-pesquisa-telefone{
+    display: flex;
+    margin-left: 200px;
+    gap: 40px;
+    margin-top: 280px;
+    width: 80%;
+
+}
+.inseri-pesquisa{
+    width: 40%;
+    height: 30px;
+    padding: 5px 0px;
+    border-color: rgb(202, 200, 200);
+    outline: none;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 3px #ddd;
+    border-radius: 2px;
+    padding-left: 20px;
+    
+}
+
+.modal-contato{
+    margin: auto;
+    padding: 50px;
+    width: 850px;
+    height: 300px;
+}
+
+.modal-contato__conteudo{
+    display: flex;
+    gap: 60px;
+
+}
+
+.modal-contato__input{
+    width: 600px;
+    height: 40px;
+    padding: 5px 0px;
+    border-color: rgb(202, 200, 200);
+    outline: none;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 3px #ddd;
+    border-radius: 4px;
+    padding-left: 20px;
+}
+
+.modal-contato__formulario{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.modal-contato_adicionar-foto{
+    width: 148px;
+    height: 148px;
+}
+
+.modal-contato__botoes{
+    display: flex;
+    gap: 30px;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-terciaria);
+    border-radius: 10px; 
+    padding: 15px 30px;
+    cursor: pointer;
+    opacity: 1;
+    font-size: 12pt;
+    
+    
+}
+
+.modal-contato__area-botoes{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+}
+
+#unidade{
+    width: 35%;
+}
+#ramal{
+    width: 12%;
+    
+}
+#email{
+    width: 35%;
+}
+
+#numero{
+    width: 50%;
 }

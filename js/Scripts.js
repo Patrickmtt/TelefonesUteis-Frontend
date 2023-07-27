@@ -1,12 +1,12 @@
-const abreModal = document.querySelector("#esqueceuSenha");
-const fechaModal = document.querySelector(".botaoModal");
-const modal = document.querySelector("dialog");
+const redefinirSenha = document.querySelector("#esqueceu-senha");
+const modalRedefinirSenha = document.querySelector("#recuperar-senha");
+const sair = document.querySelector(".modal-email__fechar");
 
-
-abreModal.onclick = function(){
-    modal.showModal()
-};
-
-fechaModal.onclick = function(){
-    modal.close()
+redefinirSenha.onclick = function(){
+    modalRedefinirSenha.showModal();
 }
+
+sair.onclick = function(){
+    modalRedefinirSenha.close();
+}
+
