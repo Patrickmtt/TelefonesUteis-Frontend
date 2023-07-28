@@ -10,17 +10,17 @@
     <link href='https://fonts.googleapis.com/css?family=Quicksand' rel="stylesheet">
 </head>
 <body>
-    <div class="coluna-esquerda">
-            <img src="assets/TechMin.png" alt="Logo TechMin" class="logo">
+    <section class="campo-logo">
+            <img src="assets/TechMin.png" alt="Logo TechMin" class="campo-logo__imagem">
             <p>Telefones Úteis</p>
-    </div>
-    <div class= "coluna-direita">
-        <div class="area-dados">
+    </section>
+    <section class= "campo-formulario">
+        <div class="campo-formulario__dados">
             <h1>Entrar</h1>
-            <form class="formulario">
-                <input type="email" class="inserir-dados" placeholder="usuário@email.com.br">
-                <input type="password" class="inserir-dados" placeholder="Senha">
-                <a href="mainPage.html"><button class="botao-login">Entrar</button></a>
+            <form class="campo-formulario__area-input">
+                <input type="email" class="campo-formulario__input" placeholder="usuário@email.com.br">
+                <input type="password" class="campo-formulario__input" placeholder="Senha">
+                <a href="mainPage.html"><button class="botao campo-formulario__botao">Entrar</button></a>
             </form>
             <button id="esqueceu-senha">Esqueceu sua senha ?</button>
             <dialog class="modal-email" id="recuperar-senha">
@@ -29,12 +29,12 @@
                     <img src="assets/redefinirSenha.png" alt="Esqueceu sua senha ?" class="modal-email__imagem-principal">
                     <h2>Esqueceu sua senha ?</h2>
                     <p>Informe o email <br>associado a sua conta</p>        
-                    <input type="email" class="modal-email__input" placeholder="usuario@email.com">
-                    <button class="modal-email__botao">Recuperar Senha</button>
+                    <input type="email" class="modal-email__input input" placeholder="usuario@email.com">
+                    <button class="modal-email__botao botao">Recuperar Senha</button>
                 </div>
             </dialog>
         </div>
-    </div>
+    </section>
     <script src="js/Scripts.js" defer></script>
 </body>
 </html>

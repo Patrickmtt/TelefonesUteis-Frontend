@@ -2,16 +2,50 @@
     --cor-principal: #039aa5;
     --cor-secundaria : #064968;
     --cor-terciaria : #f6f6f6;
+    --cor-botao: #6e6e6e;
+    font-family: "QuickSand";    
 }
 
 *{
     margin: 0;
     padding: 0;
-    border: none;
-    font-family: "QuickSand";
 }
 
-.coluna-esquerda{
+
+.botao{
+    border: 200px; 
+    font-size: 16pt; 
+    cursor: pointer;
+    opacity: 1;
+}
+
+.botao:hover{
+    opacity: 0.8;
+}
+
+.input{
+    padding: 5px 0px;
+    border-color: #cac8c8;
+    outline: none;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 3px #ddd;
+    border-radius: 4px;
+    padding-left: 20px;
+
+}
+
+/* ------------ Pagina de Login / Cadastro ---------------*/
+
+.campo-formulario{
+    width: 35%;
+    height: 100vh;
+    background-color: var(--cor-principal);
+    color: var(--cor-terciaria);
+    float: left;  
+    font-size: 16pt;
+}
+
+.campo-logo{
     margin-left: 10%;
     width: 55%;
     height: 100vh;
@@ -19,19 +53,9 @@
     color: var(--cor-secundaria);
     font-size: 35pt;
     font-weight: bold;
-    
 }
 
-.coluna-direita{
-    width: 35%;
-    height: 100vh;
-    background-color: var(--cor-principal);
-    color: var(--cor-terciaria);
-    float: left;
-   
-}
-
-.logo{
+.campo-logo__imagem{
     color: var(--cor-secundaria);
     padding-bottom: 30px;
     border-bottom: solid 5px;
@@ -39,49 +63,38 @@
     margin-top: 15%;
 }
 
-.inserir-dados{
-    width: 450px;
-    padding: 5px 0px;
-    margin: 20px 0;
+.campo-formulario__input{
     border: none;
     background: transparent;
     border-bottom: solid 1px var(--cor-terciaria);
     outline: none;
     color: var(--cor-terciaria);
     padding-left: 20px;
+    padding: 5px 0px;
+    margin: 20px 0;
 }
 
-.area-dados{
+.campo-formulario__input::placeholder{
+    font-size: 14pt;
+    opacity: 0.5;
+    font-family:'Quicksan';
+    color: var(--cor-terciaria);
+    padding-left: 20px;
+}
+
+.campo-formulario__dados{
     margin: 20%;
     text-align: center;
     display: flex;
     flex-direction: column;
 }
 
-.botao-login{
-    border: 200px;
-    margin-top: 80px;
-    background-color: var(--cor-secundaria);
-    color: var(--cor-terciaria);
-    width: 450px;
-    border-radius: 16px; 
-    font-size: 24px; 
-    padding: 20px 0px; 
-    cursor: pointer;
-    opacity: 1;
-}
-
-.botao-login:hover{
-    opacity: 0.8;
-}
-
-.formulario{
+.campo-formulario__area-input{
     display: flex;
     flex-direction: column;
     text-align: center;
     margin: 100px 0 20px 0;
 }
-
 
 #esqueceu-senha{
     text-decoration: none;
@@ -91,13 +104,21 @@
     cursor: pointer;
 }
 
-
-::placeholder{
-    font-size: 14pt;
-    opacity: 0.5;
-    font-family:'Quicksan';
+.campo-formulario__botao{
+    background-color: var(--cor-secundaria);
     color: var(--cor-terciaria);
+    margin-top: 80px;
+    width: 450px;
+    padding: 20px 0px; 
+    border-radius: 16px;
+
 }
+
+
+
+
+
+/* --------Modal de inserção de Email----------- */
 
 .modal-email{
     background-color: var(--cor-terciaria);
@@ -106,6 +127,7 @@
     height: 523px;
     border-radius: 4px;
     border: none;
+    font-size: 12pt;
     
 }
 
@@ -114,30 +136,13 @@
     background-color:  var(--cor-secundaria);
     color: var(--cor-terciaria);
     width: 80%;
-    align-self: center; 
     border-radius: 10px; 
-    font-size: 24px;
     padding: 10px 0px; 
-    font-size: 14;
-    text-decoration: none; 
-    cursor: pointer;
-    opacity: 1;
-}
-
-.botaoModal:hover{
-    opacity: 0.8;
 }
 
 .modal-email__input{
     width: 80%;
     height: 40px;
-    padding: 5px 0px;
-    border-color: rgb(202, 200, 200);
-    outline: none;
-    border: 1px solid #ccc;
-    box-shadow: inset 0 1px 3px #ddd;
-    border-radius: 4px;
-    padding-left: 20px;
     align-self: center;
 }
 
@@ -160,39 +165,64 @@
     width: 125px;
     height: 140px;
 }
+
+
+
+
+
+
+
+
+/* ----------------Main Page------------------- */
+
+
+
 .cabecalho{
     background-color: var(--cor-principal);
-    padding-left: 60px;
+    padding: 0px 60px;
 }
 
+#cabecalho__usuario{
+    margin-top: 5px;
+    display: flex;
+    gap: 10px;
+    float: right;
+}
 
-.botao-principal{
-    border: 150px;
+#foto-colaborador{
+    width: 60px;
+    height: 60px;
+}
+
+#seta-menu{
+    align-self: center;
+    width: 12px;
+    height: 10px;
+}
+
+.pagina-principal{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.pagina-principal__botao{
     background-color: var(--cor-secundaria);
     color: var(--cor-terciaria);
     width: 200px;
-    border-radius: 16px; 
-    font-size: 24px; 
+    border-radius: 16px;
+    font-size: 12pt; 
     padding: 20px 0px; 
-    cursor: pointer;
-    opacity: 1;
-    font-size: 12pt;
 }
 
-.area-ptb{
+.pagina-principal__area-botoes{
     margin: 40px 80px;
     display: flex;
     align-self: flex-end;
     gap: 40px;
 }
 
-.area-principal{
-    display: flex;
-    flex-direction: column;
-
-}
-
-.area-pesquisa{
+.pagina-principal__pesquisa{
     display: flex;
     align-self: center;
     margin-top: 70px;
@@ -201,15 +231,14 @@
     gap: 20px;
 }
 
-
-#background-pesquisa{
+#pagina-principal__background-pesquisa{
     width: inherit;
     height: inherit;
     z-index: -1;
     position: absolute;
 }
 
-#campo-pesquisa-telefone{
+#pagina-principal__pesquisas{
     display: flex;
     margin-left: 200px;
     gap: 40px;
@@ -217,42 +246,29 @@
     width: 80%;
 
 }
-.inseri-pesquisa{
+.pagina-principal__input{
     width: 40%;
     height: 30px;
-    padding: 5px 0px;
-    border-color: rgb(202, 200, 200);
-    outline: none;
-    border: 1px solid #ccc;
-    box-shadow: inset 0 1px 3px #ddd;
-    border-radius: 2px;
-    padding-left: 20px;
-    
 }
 
+/*  --------------Modal Contato------------- */
 .modal-contato{
     margin: auto;
-    padding: 50px;
-    width: 850px;
-    height: 300px;
+    padding: 30px;
+    width: 900px;
+    height: 320px;
+    
 }
 
 .modal-contato__conteudo{
     display: flex;
-    gap: 60px;
+    gap: 30px;
 
 }
 
 .modal-contato__input{
-    width: 600px;
+    width: 635px;
     height: 40px;
-    padding: 5px 0px;
-    border-color: rgb(202, 200, 200);
-    outline: none;
-    border: 1px solid #ccc;
-    box-shadow: inset 0 1px 3px #ddd;
-    border-radius: 4px;
-    padding-left: 20px;
 }
 
 .modal-contato__formulario{
@@ -267,24 +283,42 @@
     height: 148px;
 }
 
-.modal-contato__botoes{
-    display: flex;
-    gap: 30px;
-    background-color: var(--cor-secundaria);
-    color: var(--cor-terciaria);
-    border-radius: 10px; 
-    padding: 15px 30px;
-    cursor: pointer;
-    opacity: 1;
-    font-size: 12pt;
-    
-    
-}
-
 .modal-contato__area-botoes{
+    width: 100%;
     display: flex;
     flex-wrap: nowrap;
     gap: 30px;
+    margin-top: 20px;
+}
+#modal-contato__botao-cancelar{
+    width: 30%;
+    background-color: var(--cor-botao);
+    color: var(--cor-terciaria);
+    font-size: 12t;
+    border-radius: 10px; 
+    padding: 15px 30px;
+}
+
+#modal-contato__botao-add{
+    width: 30%;
+    background-color: var(--cor-principal);
+    color: var(--cor-terciaria);
+    font-size: 12pt;
+    border-radius: 10px; 
+    padding: 15px 30px;
+}
+
+#modal-contato__botao-salvar{
+    width: 40%;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-terciaria);
+    font-size: 12pt;
+    border-radius: 10px; 
+    padding: 15px 30px;
+}
+
+#nome{
+    width: 94%;
 }
 
 #unidade{
