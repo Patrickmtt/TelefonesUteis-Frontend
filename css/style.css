@@ -9,6 +9,7 @@
 *{
     margin: 0;
     padding: 0;
+    border: none;
 }
 
 
@@ -126,7 +127,6 @@
     width: 350px;
     height: 523px;
     border-radius: 4px;
-    border: none;
     font-size: 12pt;
     
 }
@@ -159,6 +159,7 @@
     max-width: 20px;
     max-height: 20px;
     align-self: flex-end;
+    cursor: pointer;
 }
 
 .modal-email__imagem-principal{
@@ -189,7 +190,7 @@
     float: right;
 }
 
-#foto-colaborador{
+.foto-colaborador{
     width: 60px;
     height: 60px;
 }
@@ -256,8 +257,7 @@
     margin: auto;
     padding: 30px;
     width: 900px;
-    height: 320px;
-    
+    height: 320px;    
 }
 
 .modal-contato__conteudo{
@@ -324,6 +324,7 @@
 #unidade{
     width: 35%;
 }
+
 #ramal{
     width: 12%;
     
@@ -333,5 +334,95 @@
 }
 
 #numero{
-    width: 50%;
+    width: 45%;
+}
+
+/*  --------------Card Contato------------- */
+
+.area-card-contato{
+    margin: 6% 10%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 100%;
+    gap: 20px;
+
+}
+.card-contato{
+    display: flex;
+    gap: 5%;
+    padding: 20px;
+    width: 29%;
+    border-radius: 10px;
+    border: 1px solid #a39a9a;
+    box-shadow: 0px 5px 5px 1px rgb(150, 140, 140);
+    font-family: Arial;
+}
+
+.card-contato__dados{
+    display: flex;
+    width: 100%;
+    gap: 8px;
+    flex-direction: column;
+    white-space: nowrap;
+    overflow: hidden;
+    color: var(--cor-botao);
+}
+
+.card-contato__icon{
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.card-contato__ramal{
+    color: var(--cor-principal);
+    font-weight: bold;
+}
+
+#card-contato__nome{
+    font-weight: bold;
+    color: black;
+}
+
+#unidade{
+    font-size: 8pt;
+}
+
+/*  --------------Modal Editar usuario------------- */
+
+.modal-editar-usuario{
+    margin: auto;
+    padding: 30px;
+    width: 900px;
+    height: 370px;
+}
+
+#modal-editar-usuario__botao-salvar{
+    width: 160px;
+    font-size: 14pt;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-terciaria);
+    border-radius: 10px; 
+    padding: 15px 30px;
+}
+
+#modal-editar-usuario__botao-cancelar{
+    width: 180px;
+    font-size: 14pt;
+    background-color: var(--cor-botao);
+    color: var(--cor-terciaria);
+    border-radius: 10px; 
+    padding: 15px 30px;
+
+}
+
+.modal-editar-usuario__area-botoes{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+    margin-top: 20px;
+    justify-content: flex-end;
 }

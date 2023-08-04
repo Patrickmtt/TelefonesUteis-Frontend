@@ -14,7 +14,7 @@
         <header class="cabecalho">
             <img src="assets/TechMinHeader.png" alt="logo">
             <div id="cabecalho__usuario">
-                <img src="assets/adicionarFoto.png" alt="foto colaborador" id="foto-colaborador">
+                <img src="assets/adicionarFoto.png" alt="foto colaborador" class="foto-colaborador">
                 <img src="assets/seta.png" alt="abrir menu" id="seta-menu">
             </div>
         </header>
@@ -35,19 +35,19 @@
         <dialog class="modal-contato" id="adicionar-contato">
             <div class="modal-contato__conteudo">
                 <img src="assets/adicionarFoto.png" alt="Adicionar Contato" class="modal-contato_adicionar-foto">
-                <form class="modal-contato__formulario">
+                <div class="modal-contato__formulario">
                     <input type="text" placeholder="Nome" id="nome"class="modal-contato__input input">
                     <input type="text" placeholder="Unidade"id="unidade" class="modal-contato__input input">
-                    <input type="text" placeholder="Ramal" id="ramal" class="modal-contato__input input">
+                    <input type="number" placeholder="Ramal" id="ramal" class="modal-contato__input input">
                     <input type="email" placeholder="Email" id="email" class="modal-contato__input input">
                     <input type="text"  placeholder="Telefone" id="numero" class="modal-contato__input input">
 
                     <div class="modal-contato__area-botoes">
-                        <button class="botao" id="modal-contato__botao-cancelar">Cancelar</button>
-                        <button class="botao" id="modal-contato__botao-add">Continuar ADD</button>
-                        <button class="botao" id="modal-contato__botao-salvar">Salvar e Finalizar</button>
+                        <button class="botao" id="modal-contato__botao-cancelar">CANCELAR</button>
+                        <button class="botao" id="modal-contato__botao-add">CONTINUAR ADD</button>
+                        <button class="botao" id="modal-contato__botao-salvar">SALVAR E FINALIZAR</button>
                     </div>
-                </form>
+                </div>
         </div>
         </dialog>
         <div class="pagina-principal__pesquisa">
@@ -56,8 +56,30 @@
                 <input type="text" class="pagina-principal__input input">
                 <input type="text" class="pagina-principal__input input">
             </div>
-        </div>   
+        </div>
+        <div class="area-card-contato"></div>
+       </div>
+       <dialog class="modal-editar-usuario">
+        <div class="modal-contato__conteudo">
+            <img src="assets/adicionarFoto.png" alt="Adicionar Contato" class="modal-contato_adicionar-foto">
+            <div class="modal-contato__formulario">
+                <input type="text" placeholder="Nome" id="nome"class="modal-contato__input input">
+                <input type="text" placeholder="Unidade"id="unidade" class="modal-contato__input input">
+                <input type="number" placeholder="Ramal" id="ramal" class="modal-contato__input input">
+                <input type="email" placeholder="Email" id="email" class="modal-contato__input input">
+                <input type="number"  placeholder="Telefone" id="numero" class="modal-contato__input input">
+                <input type="number"  placeholder="Telefone 2" id="numero" class="modal-contato__input input">
+                <input type="password"  placeholder="Senha" id="numero" class="modal-contato__input input">
+                <input type="password"  placeholder="Confirmar Senha" id="numero" class="modal-contato__input input">
+
+                <div class="modal-editar-usuario__area-botoes">
+                    <button class="botao" id="modal-contato__botao-cancelar">CANCELAR</button>
+                    <button class="botao" id="modal-editar-usuario__botao-salvar">SALVAR</button>
+                </div>
+            </div>
+    </div>
+    </dialog>
     </section>
-    <script src="js/teste.js" defer></script>
+    <script src="js/scriptMainPage.js" defer></script>
 </body>
 </html>
